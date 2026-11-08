@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2A2724" />
+    <meta name="description" content="Plainview Baptist Church in Hornbeck, Louisiana. Events, prayer, sermons, and the church family." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Plainview Baptist" />
+    <title>Plainview Baptist Church</title>
+    <script>
+      // Restore a GitHub Pages deep link before the app reads the address.
+      // Pairs with deploy/root-404.html. See shared/spa-redirect.ts.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, "", l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <link rel="icon" href="/plainview/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/plainview/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/plainview/manifest.webmanifest" />
+    <script type="module" crossorigin src="/plainview/assets/index-CnDUs8gB.js"></script>
+    <link rel="stylesheet" crossorigin href="/plainview/assets/index-Sv8DMv3j.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

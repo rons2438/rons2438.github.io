@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F7F3EC"/>
+  <rect x="48" y="48" width="1824" height="984" fill="none" stroke="#C9962E" stroke-width="10"/>
+  <rect x="70" y="70" width="1780" height="940" fill="none" stroke="#7A5A10" stroke-width="3"/>
+  <text x="960" y="280" text-anchor="middle" fill="#7A5A10" font-family="Georgia, serif" font-size="36">PLAINVIEW BAPTIST CHURCH</text>
+  <text x="960" y="460" text-anchor="middle" fill="#241F1B" font-family="Georgia, serif" font-size="84">Fellowship Supper</text>
+  <text x="960" y="580" text-anchor="middle" fill="#7A5A10" font-family="Georgia, serif" font-size="42">Bring a side dish if you can</text>
+  <text x="960" y="660" text-anchor="middle" fill="#2A2724" font-family="Georgia, serif" font-size="36">Fellowship Hall</text>
+  <text x="960" y="860" text-anchor="middle" fill="#5C564E" font-family="Georgia, serif" font-size="28">Plainview Baptist Church · Hornbeck, Louisiana</text>
+</svg>
