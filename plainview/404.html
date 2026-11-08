@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Plainview Baptist Church has moved</title>
+    <meta http-equiv="refresh" content="0;url=https://plainviewbaptist.github.io/" />
+    <script>
+      (function () {
+        var path = location.pathname;
+        var mark = "/plainview";
+        var at = path.indexOf(mark);
+        var rest = at >= 0 ? path.slice(at + mark.length) : "";
+        if (rest.charAt(0) === "/") rest = rest.slice(1);
+        location.replace("https://plainviewbaptist.github.io/" + rest + location.search + location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>We moved. <a href="https://plainviewbaptist.github.io/">Continue to Plainview Baptist Church</a>.</p>
+  </body>
+</html>

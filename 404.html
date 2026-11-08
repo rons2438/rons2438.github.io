@@ -4,23 +4,22 @@
     <meta charset="utf-8" />
     <title>Page not found</title>
     <script>
-      // Place this file at the root of rons2438.github.io as /404.html.
-      // GitHub Pages uses that one file for every missing path.
-      // Only /plainview/ is sent into the app. /flightlog/ and every other path stay here.
-      // Query encoding matches https://github.com/rafgraph/spa-github-pages (MIT)
-      // and shared/spa-redirect.ts.
       (function () {
-        var l = window.location;
-        var path = l.pathname;
-        if (path !== "/plainview" && path.indexOf("/plainview/") !== 0) return;
-        var keep = 1;
-        var prefix = path.split("/").slice(0, 1 + keep).join("/");
-        var rest = path.slice(1).split("/").slice(keep).join("/").replace(/&/g, "~and~");
-        var search = l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "";
-        l.replace(
-          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
-          prefix + "/?/" + rest + search + l.hash
-        );
+        var path = location.pathname;
+        var search = location.search;
+        var hash = location.hash;
+        function go(rest) {
+          location.replace("https://plainviewbaptist.github.io/" + rest + search + hash);
+        }
+        if (path === "/plainview" || path.indexOf("/plainview/") === 0) {
+          var after = path.slice("/plainview".length);
+          if (after.charAt(0) === "/") after = after.slice(1);
+          go(after);
+          return;
+        }
+        if (path === "/join" || path.indexOf("/join/") === 0) {
+          go(path.replace(/^\//, ""));
+        }
       })();
     </script>
   </head>
